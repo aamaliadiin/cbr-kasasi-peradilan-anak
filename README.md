@@ -10,11 +10,12 @@
 ```
 cbr-peradilan-anak/
 │
-├── 01_preprocessing.ipynb         # Scraping & preprocessing PDF dari MA
-├── 02_case_representation.ipynb   # Ekstraksi metadata & text features
-├── 03_case_retrieval.ipynb        # Retrieval: TF-IDF vs IndoBERT
-├── 04_case_reuse.ipynb            # Prediksi outcome: voting & weighted
-├── 05_evaluation.ipynb            # Evaluasi metrik & error analysis
+├── Notebook
+│   ├── 01_preprocessing.ipynb    # Scraping & preprocessing PDF dari MA
+│   ├── 02_case_representation.ipynb   # Ekstraksi metadata & text features
+│   ├── 03_case_retrieval.ipynb        # Retrieval: TF-IDF vs IndoBERT
+│   ├── 04_case_reuse.ipynb            # Prediksi outcome: voting & weighted
+│   └── 05_evaluation.ipynb            # Evaluasi metrik & error analysis
 │
 ├── requirements_preprocessing.txt # Dependensi environment 01 & 02
 ├── requirements_cbr.txt           # Dependensi environment 03, 04 & 05
