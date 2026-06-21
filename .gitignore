@@ -1,0 +1,74 @@
+## =========================================================================
+## .gitignore — Project CBR Kasasi Peradilan Anak (Mahkamah Agung)
+## Disusun berdasarkan output notebook 01_preprocessing s.d. 06_evaluation
+## =========================================================================
+
+## ---- Data & hasil pipeline (PDF mentah, hasil scraping, hasil model) ----
+## Semua isi data/ & logs/ adalah hasil scraping/proses, bukan source code,
+## dan ukurannya bisa besar (ratusan PDF) -> jangan di-commit ke Git.
+data/
+logs/
+
+## File checkpoint & riwayat scraper notebook 01 (di root project)
+progress_checkpoint_cbr.txt
+riwayat_terunduh_cbr.txt
+
+## (Opsional) kalau mau struktur folder data/ tetap kelihatan di repo,
+## tambahkan file kosong data/<subfolder>/.gitkeep lalu un-comment baris ini:
+# !data/.gitkeep
+# !data/pdf/.gitkeep
+# !data/raw/.gitkeep
+# !data/tokens/.gitkeep
+# !data/eval/.gitkeep
+# !data/results/.gitkeep
+# !logs/.gitkeep
+
+## ---- Artefak model / embedding besar (jaga-jaga kalau lokasinya pindah) ----
+*.npy
+*.pkl
+*.joblib
+*.pt
+*.bin
+*.h5
+
+## ---- Jupyter ----
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/*
+
+## ---- Python ----
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+## ---- Virtual environment / Conda ----
+venv/
+env/
+.venv/
+ENV/
+.conda/
+
+## ---- Browser/scraper artefak (SeleniumBase / undetected-chromedriver) ----
+*.driver.log
+geckodriver.log
+chromedriver.log
+downloaded_files/
+uc_driver/
+
+## ---- VSCode ----
+.vscode/
+*.code-workspace
+
+## ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+## ---- Environment variables / secrets ----
+.env
+.env.*
