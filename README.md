@@ -11,7 +11,7 @@
 cbr-peradilan-anak/
 │
 ├── Notebook
-│   ├── 01_preprocessing.ipynb    # Scraping & preprocessing PDF dari MA
+│   ├── 01_preprocessing.ipynb         # Scraping & preprocessing PDF dari MA
 │   ├── 02_case_representation.ipynb   # Ekstraksi metadata & text features
 │   ├── 03_case_retrieval.ipynb        # Retrieval: TF-IDF vs IndoBERT
 │   ├── 04_case_reuse.ipynb            # Prediksi outcome: voting & weighted
