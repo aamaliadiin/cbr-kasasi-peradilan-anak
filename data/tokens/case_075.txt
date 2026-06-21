@@ -4,7 +4,7 @@
 # N_PAGES    : 11
 # N_TOKENS   : 2612
 # STATUS     : TERSIMPAN_OK
-# CLEANED_ON : 2026-06-21 22:48:43
+# CLEANED_ON : 2026-06-22 00:29:06
 # ============================================================
 putusan
 mahkamahagung

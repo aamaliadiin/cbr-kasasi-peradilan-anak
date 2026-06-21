@@ -4,7 +4,7 @@
 # N_PAGES    : 3
 # N_TOKENS   : 503
 # STATUS     : PERLU_CEK
-# CLEANED_ON : 2026-06-21 22:49:04
+# CLEANED_ON : 2026-06-22 00:29:30
 # ============================================================
 putusan
 mahkamahagung
