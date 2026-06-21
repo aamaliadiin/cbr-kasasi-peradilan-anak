@@ -1,35 +1,13 @@
 ## =========================================================================
 ## .gitignore — Project CBR Kasasi Peradilan Anak (Mahkamah Agung)
 ## Disusun berdasarkan output notebook 01_preprocessing s.d. 06_evaluation
+## Catatan: folder data/ dan logs/ SENGAJA tidak di-exclude (ikut ke-commit)
 ## =========================================================================
 
-## ---- Data & hasil pipeline (PDF mentah, hasil scraping, hasil model) ----
-## Semua isi data/ & logs/ adalah hasil scraping/proses, bukan source code,
-## dan ukurannya bisa besar (ratusan PDF) -> jangan di-commit ke Git.
-data/
-logs/
-
-## File checkpoint & riwayat scraper notebook 01 (di root project)
+## ---- File checkpoint & riwayat scraper notebook 01 (di root project) ----
+## (boleh dihapus dari sini juga kalau mau ikut di-commit)
 progress_checkpoint_cbr.txt
 riwayat_terunduh_cbr.txt
-
-## (Opsional) kalau mau struktur folder data/ tetap kelihatan di repo,
-## tambahkan file kosong data/<subfolder>/.gitkeep lalu un-comment baris ini:
-# !data/.gitkeep
-# !data/pdf/.gitkeep
-# !data/raw/.gitkeep
-# !data/tokens/.gitkeep
-# !data/eval/.gitkeep
-# !data/results/.gitkeep
-# !logs/.gitkeep
-
-## ---- Artefak model / embedding besar (jaga-jaga kalau lokasinya pindah) ----
-*.npy
-*.pkl
-*.joblib
-*.pt
-*.bin
-*.h5
 
 ## ---- Jupyter ----
 .ipynb_checkpoints/
